@@ -75,8 +75,8 @@ The six autosomal accessions, CM039926.1, CM039927.1, CM039928.1, CM039929.1, CM
 
 **Rscript**
 
-# Sex-chromosome dosage from whole-genome DNA read depth
-# Input: Samtools coverage TSV + student chromosome labels
+#Sex-chromosome dosage from whole-genome DNA read depth
+#Input: Samtools coverage TSV + student chromosome labels
 cov <- read.delim("chromosome_coverage.tsv", comment.char = "",
 check.names = FALSE, stringsAsFactors = FALSE)
 names(cov)[1] <- "rname" # Accepts the '#rname' header
@@ -113,12 +113,12 @@ call <- if (ratio >= 0.80) two_copies else if (ratio <= 0.65)
 one_copy else "Ambiguous"
 if (A < 1) call <- "Inconclusive: very low autosomal depth"
 
-# Additional Y or W evidence can support, but not prove, a call
+#Additional Y or W evidence can support, but not prove, a call
 partner <- if (target == "X") "Y" else "W"
 partner_ratio <- if (partner %in% x$group)
 x$relative_depth[x$group == partner][1] else NA_real_
 
-# Export results and a simple, reproducible figure
+#Export results and a simple, reproducible figure
 dir.create("results", showWarnings = FALSE)
 write.csv(x, "results/chromosome_relative_depth.csv", row.names = FALSE)
 png("results/chromosome_depth.png", width = 1000, height = 580)
