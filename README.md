@@ -146,7 +146,7 @@ cat(paste(summary, collapse = "\n"), "\n")
 
 <img width="1000" height="580" alt="chromosome_depth" src="https://github.com/user-attachments/assets/5579359a-9e10-4d80-8993-ced19e237b99" />
 
-**Figure 10.** Bar plot of per-chromosome sequencing depth relative to the median autosome for your friend's dataset. The dashed horizontal lines indicate the expected coverage thresholds for two-copy (1.0) and one-copy (0.5) chromosomal states across the analyzed chromosomes (CM039926.1 through CM039952.1).
+**Figure 10.** The dashed horizontal lines indicate the expected coverage thresholds for two-copy (1.0) and one-copy (0.5) chromosomal states across the analyzed chromosomes (CM039926.1 through CM039952.1).
 
 The relative depth bar plot displays uniform per-chromosome sequencing coverage across all analyzed chromosomes (CM039926.1 through CM039952.1), with every sequence maintaining a relative depth clustering tightly around the $1.0$ baseline. Because all examined chromosomes align near the two-copy threshold without dropping toward the $0.5$ half-coverage line, the sample exhibits consistent chromosomal dosage representation with no evidence of hemizygous deletions or whole-chromosome copy number variations.
 
